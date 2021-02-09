@@ -1,0 +1,44 @@
+
+    body{
+    background-color: rgb(225, 231, 231)
+    }
+    .for-head{
+    color: red;
+    display: inline;
+    text-align: -webkit-center;
+}
+    .for-head>h3{
+        color: black;
+    }
+img{
+width: 25%;
+        
+}
+    
+.content{
+    background-color:#f4f9f9;
+    display: flex;
+    margin-bottom: 10px;
+}
+div{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+.button{
+        width: 20%;
+        height: 33px;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(220, 0, 0, 1);
+    }
+.button-div{
+    display: flex;
+    display: flex;
+    flex-direction: row-reverse;
+}
