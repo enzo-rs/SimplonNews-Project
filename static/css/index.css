@@ -64,7 +64,7 @@ div.form-container {
 form input[type="email"],
 form input[type="text"],
 form input[type="password"] {
-  outline-color: black;
+  outline-color: #f61717;
   background-color: #e1e1e1;
   margin: 8px 0;
   border: 1px solid #ccc;
