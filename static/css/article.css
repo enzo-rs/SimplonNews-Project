@@ -1,6 +1,6 @@
 
     body{
-    background-color: rgb(225, 231, 231)
+    background-color: rgb(218, 48, 14)
     }
     .for-head{
     color: red;
@@ -39,6 +39,33 @@ div{
     }
 .button-div{
     display: flex;
-    display: flex;
+    
     flex-direction: row-reverse;
 }
+@media screen and (min-width: 375px) {
+    body{
+        background-color: cyan;
+    }
+    .for-head{
+        display: flex;
+        order: 1;
+    }
+    .for-head>h3{
+        order: 2;
+    }
+    .img-article{
+        width: 100%;
+    }
+    div{
+        order: 3;
+        justify-content: end;
+    }
+    .button{
+        order: 1;
+        padding: 0%;
+        font-size: 74%;
+    }
+    article.content{
+        display: contents;
+    }
+    }
