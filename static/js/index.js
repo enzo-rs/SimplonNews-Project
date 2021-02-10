@@ -8,12 +8,12 @@ let form = document.querySelector('form');
 // let userName = form1.username;
 // let password = form1.password;
 
-let formElement = document.form1;
-let emailInput = form.email;
-let firstNameInput = form.firstName;
-let lastNameInput = form.lastName;
-let passwordInput = form.password;
-let submit = form.signin;
+let formElement     = document.form1;
+let emailInput      = form.email;
+let firstNameInput  = form.firstName;
+let lastNameInput   = form.lastName;
+let passwordInput   = form.password;
+let submit          = form.signin;
 
 
 function validateForm() {
