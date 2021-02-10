@@ -71,4 +71,10 @@ div{
     padding:O%;
     padding-left: 8rem;
 }
+nav.main-nav ul{
+    flex-direction: column;
+    align-items: center;
+}
     }
+
+    
