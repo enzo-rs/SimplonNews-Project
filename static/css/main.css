@@ -109,8 +109,14 @@ nav.main-nav ul{
     padding: 5px;
 }
 
+
 .footer{ 
     background-color: #f2f2f2;
+}
+
+.logo{
+    position: absolute;
+    left: -999em;
 }
 
 .menu ul{
@@ -179,10 +185,35 @@ hr{
         flex-direction: column;
     }
 
+    .box2{
+        border: #b60a0a;
+    }
+        
     .box7{
         display: none;
-        border: ;
     }
+
+    .logo{
+        position: absolute;
+        left: 150px;
+        padding-top: 100px;
+    }
+
+    
+    .logo2{
+        display: none;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .menu ul li{
+        padding-bottom: 10px;
+    }
+    
 
     hr{
         width: 70%;
@@ -191,7 +222,7 @@ hr{
     .links ul{
         flex-direction: column;
         align-items: center;
+        padding-top: 70px;
     }
-
 
 }
