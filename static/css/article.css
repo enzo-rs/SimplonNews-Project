@@ -60,16 +60,19 @@ div{
     background-color: rgba(220, 0, 0, 1);
 }
 .search > i {
-    font-size: 1rem;
+    font-size: 3rem;
 }
 .search{
     margin-top: 2rem;
 }
 .menu ul{
-    background-color: blue;
-    display: flex;  
-    padding:O%;
-    padding-left: 8rem;
+    background-color: rgb(0, 255, 255);
+    
+   
+}
+menu {
+    display: flex;
+
 }
 nav.main-nav ul{
     flex-direction: column;
