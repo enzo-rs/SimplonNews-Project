@@ -1,10 +1,12 @@
+
+/* Signin redirection start */
 function changePage() {
     let link = document.querySelector('div.form-links > a:not(.active)');
 
     link.addEventListener('click', () => {
-        document.location.href = "static/views/login.html"
+        document.location.href = "../../index.html"
     })
 }
+changePage()
 
-
-export {changePage};
+/* Signin redirection end */
