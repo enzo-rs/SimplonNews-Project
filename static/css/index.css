@@ -112,3 +112,12 @@ div.errors {
   cursor: pointer;
   user-select: none;
 }
+
+
+/* Login / Signin */
+
+a.active {
+  color: #fff;
+  background-color: #f61717;
+  background-image: none;
+}
