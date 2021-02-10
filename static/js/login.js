@@ -46,7 +46,7 @@ function accessUser(email, password) {
             } else
                 response.json()
                 .then(function (data) {
-                    export let token = data.token;
+                     let token = data.token;
                     document.location.href = '../views/home.html'
 
                 })
