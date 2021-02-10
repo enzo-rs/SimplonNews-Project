@@ -44,11 +44,11 @@ div.form-container, main > img {
   width: 50%;
   padding: 1% 0;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
-.form-links {
+.form-links, form[name="form1"] {
   display: flex;
-  width: 80%;
+  width: 70%;
 }
 
 .form-container form {
@@ -60,7 +60,6 @@ div.form-container, main > img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
   height: 60%;
 }
 
@@ -68,7 +67,7 @@ div.form-container, main > img {
 form input[type="email"],
 form input[type="text"],
 form input[type="password"] {
-  outline-color: #f61717;
+  outline-color: black;
   background-color: #e1e1e1;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -88,6 +87,7 @@ input[type="submit"] {
   background-color: #f61717;
   color: white;
   border: none;
+  font-size: 1.5rem;
 }
 
 
