@@ -1,62 +1,11 @@
-*{ 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-.header{ 
-    display: flex; 
-    justify-content: center; 
-    flex-direction: column;
-}
-
-div.search img{ 
-    color: #f61717;
-}
-
-.search{ 
-    display: flex; 
-    justify-content: flex-end; 
-    background-color: #f2f2f2;
-}
-
-.title{ 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-}
-
-h1{ 
-    color: #f61717;
-    font-size: 5em;
-    padding: 15px;
-}
- 
-
-h2{
-    padding-bottom: 50px;
-}
-
-.main-nav{ 
-    background-color: #f61717; 
-    color: white; 
-    margin-left: 100px; 
-    margin-right: 100px; 
-    height: 30px; 
-}
-
-nav.main-nav ul{ 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-around; 
-    list-style: none;
-    padding: 5px;
-}
 
 .articles{ 
     display: flex; 
     justify-content: center; 
     background-color: #f2f2f2; 
+    width: 100%;
     padding-top: 15px;
 }
 
@@ -71,6 +20,7 @@ nav.main-nav ul{
 .box1{ 
     grid-column: 2/3; 
     grid-row: 1/2; 
+    width: 20;
 }
 
 .box2{ 
@@ -80,7 +30,12 @@ nav.main-nav ul{
     height: 187px; 
     background-color: #f61717; 
     color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     
 }
+
 
 .box3{ 
     grid-column: 4/5; 
@@ -89,6 +44,9 @@ nav.main-nav ul{
     height: 187px; 
     background-color: #f61717; 
     color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .box4{ 
@@ -98,6 +56,9 @@ nav.main-nav ul{
     height: 187px; 
     background-color: black; 
     color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .box5{ 
@@ -112,6 +73,9 @@ nav.main-nav ul{
     height: 187px; 
     background-color: #f61717; 
     color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .box7{ 
@@ -126,6 +90,9 @@ nav.main-nav ul{
     height: 187px; 
     background-color: black; 
     color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .box-content{ 
@@ -134,9 +101,9 @@ nav.main-nav ul{
     align-items: center;
 }
 
-.box-content :second-child{ 
+.box2 h3{ 
     display: flex; 
-    align-items: center;
+    justify-content: center;
 }
 
 .footer{ 
@@ -148,12 +115,20 @@ nav.main-nav ul{
     flex-direction: row; 
     justify-content: space-around; 
     list-style: none;
-    padding: 50px 0 50px 0;
+    width: 70%;
+    margin: auto;
+    padding: 200px 0 100px 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #f61717;
 }
 
 hr{
-    margin-left: 200px; 
-    margin-right: 200px; 
+    width: 50%;
+    margin: auto;
+    color: #f61717;
 }
 
 .links ul{
@@ -162,6 +137,58 @@ hr{
     justify-content: center; 
     list-style: none;
     gap: 20px;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 100px 0;
+}
+
+.links .fab{
+    font-size: 2rem;
+    color: #f61717;
+}
+
+.links .fab:hover{
+    color: black;
+}
+
+
+.copyrights{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width : 414px){
+    h1{ 
+        text-align: center;
+        padding: 15px;
+    }
+
+    .main-nav{
+        width: 100%;
+    }
+
+    .bicPic img{
+        display: none;
+        
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box7{
+        display: none;
+        border: ;
+    }
+
+    hr{
+        width: 70%;
+    }
+
+    .links ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 }
