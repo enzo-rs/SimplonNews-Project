@@ -37,16 +37,37 @@ class ArticlesObjet {
         let str = "";
 
         for (let i = 0; i < cible.length; i++) {
-            str = `<div class="box-content">
+            str = `<div  data-key="${this.product[i].id}" class="box-content redir">
             <h3>${this.product[i].title}</h3>
             <p>${this.product[i].resume}</p>
-        </div>`
+            </div>`
             cible[i].innerHTML = str;
 
         }
+        redirection()
     }
 }
 
+
+
+
+
+function redirection() {
+    
+    let cible = document.querySelectorAll('div.redir');
+
+
+    
+    cible.forEach((e) => {
+        e.addEventListener("click", () => {
+            let code = e.getAttribute('data-key');
+
+            sessionStorage.setItem('id', code);
+            document.location = 'article.html'
+            console.log(code);
+          });
+    })
+}
 
 
 getArticle(key);
