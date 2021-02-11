@@ -7,7 +7,9 @@ console.log(key);
 function getArticle(key) {
     let config = {
         method: 'GET',
-        headers: { 'Authorization': 'Bearer ' + key }
+        headers: {
+            'Authorization': 'Bearer ' + key
+        }
     }
 
     fetch('https://simplonews.brianboudrioux.fr/articles', config)
@@ -37,7 +39,7 @@ class ArticlesObjet {
         let str = "";
 
         for (let i = 0; i < cible.length; i++) {
-            str = `<div data-key ="${this.product[i].id}" class="box-content">
+            str = `<div data-key ="${this.product[i].id}" class="box-content redir">
             <h3>${this.product[i].title}</h3>
             <p>${this.product[i].resume}</p>
             </div>`
@@ -49,28 +51,18 @@ class ArticlesObjet {
 }
 
 function redirection() {
-    
-    let cible = document.querySelectorAll('div.box-content');
 
-
-
-
-function redirection() {
-    
     let cible = document.querySelectorAll('div.redir');
 
-    
     cible.forEach((e) => {
         e.addEventListener("click", () => {
-            let code = e.getAttribute('data-key');
 
-            sessionStorage.setItem('id', code);
+            let code = e.getAttribute('data-key');
             document.location = 'article.html'
-            console.log(code);
-          });
+            sessionStorage.setItem('id', code);
+        });
     })
 }
 
 
 getArticle(key);
-
