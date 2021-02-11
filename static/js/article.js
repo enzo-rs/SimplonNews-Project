@@ -34,7 +34,8 @@ class ArticlesObjet {
         let cible = document.querySelector('article.content');
         let str = "";
 
-            str = `<div>
+            str = `<img class="img-article" src="${this.product.img}" alt="">
+            <div>
             <div class="button-div">
                 <button class="button"type="button"><a href="#"></a>
                     Free Trial</button>
