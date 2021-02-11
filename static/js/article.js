@@ -54,7 +54,3 @@ class ArticlesObjet {
 
 
 getArticle(key, code)
-
-
-
-

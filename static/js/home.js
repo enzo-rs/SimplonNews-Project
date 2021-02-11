@@ -37,17 +37,20 @@ class ArticlesObjet {
         let str = "";
 
         for (let i = 0; i < cible.length; i++) {
-            str = `<div  data-key="${this.product[i].id}" class="box-content redir">
+            str = `<div data-key ="${this.product[i].id}" class="box-content">
             <h3>${this.product[i].title}</h3>
             <p>${this.product[i].resume}</p>
             </div>`
             cible[i].innerHTML = str;
 
         }
-        redirection()
+        redirection();
     }
 }
 
+function redirection() {
+    
+    let cible = document.querySelectorAll('div.box-content');
 
 
 
@@ -55,7 +58,6 @@ class ArticlesObjet {
 function redirection() {
     
     let cible = document.querySelectorAll('div.redir');
-
 
     
     cible.forEach((e) => {
