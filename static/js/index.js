@@ -16,18 +16,6 @@ let passwordInput   = form.password;
 let submit          = form.signin;
 
 
-function validateForm() {
-
-    if (firstNameInput.value == null || firstNameInput.value == "") {
-        return false;
-    } else if (lastNameInput.value == null || lastNameInput.value == "") {
-        return false;
-    } else if (passwordInput.value == null || passwordInput.value == "") {
-        return false;
-    } else {
-        return true
-    }
-}
 
 function validateEmail() {
     var emailValue = document.form1.email.value; // on récupère la valeur entrée dans l'input email
@@ -54,14 +42,7 @@ form.addEventListener('submit', (e) => {
 
 // Création de la fonction alertBox
 
-function alertBox(string) {
-    let container = document.querySelector('main .errors-container');
-    let error = document.createElement('div');
-    error.classList.add('errors');
-    error.innerHTML = `<p>${string}<p>
-    <i class="fas fa-times"></i>`;
-    container.appendChild(error)
-}
+
 
 
 
@@ -141,14 +122,6 @@ formElement.addEventListener('submit', (e) => {
     let lastNameValue = lastNameInput.value;
 
 
-    let cross = document.querySelectorAll('.errors-container .fa-times');
-
-    cross.forEach((e) => {
-        e.addEventListener('click', () => {
-            e.parentElement.parentElement.remove()
-        })
-    })
-
     createUser(emailValue, passwordValue, firstNameValue, lastNameValue);
 
     if (!validateEmail()) {
@@ -169,13 +142,8 @@ formElement.addEventListener('submit', (e) => {
 
 
 /* Login redirection start*/
-function changePage() {
-    let link = document.querySelector('div.form-links > a:not(.active)');
 
-    link.addEventListener('click', () => {
-        document.location.href = "static/views/login.html"
-    })
-}
 
-changePage()
+changePage('static/views/login.html')
+
 /* Login redirection end*/

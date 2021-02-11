@@ -40,7 +40,7 @@ class ArticlesObjet {
             str = `<div data-key ="${this.product[i].id}" class="box-content">
             <h3>${this.product[i].title}</h3>
             <p>${this.product[i].resume}</p>
-        </div>`
+            </div>`
             cible[i].innerHTML = str;
 
         }
@@ -53,6 +53,12 @@ function redirection() {
     let cible = document.querySelectorAll('div.box-content');
 
 
+
+
+function redirection() {
+    
+    let cible = document.querySelectorAll('div.redir');
+
     
     cible.forEach((e) => {
         e.addEventListener("click", () => {
@@ -64,6 +70,7 @@ function redirection() {
           });
     })
 }
+
 
 getArticle(key);
 
