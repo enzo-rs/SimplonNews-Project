@@ -47,6 +47,8 @@ function accessUser(email, password) {
                 response.json()
                 .then(function (data) {
                      let token = data.token;
+
+                     sessionStorage.setItem('token', token);
                     document.location.href = '../views/home.html'
 
                 })
