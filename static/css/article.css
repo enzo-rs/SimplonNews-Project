@@ -59,17 +59,29 @@ div{
     border-radius: 10px;
     background-color: rgba(220, 0, 0, 1);
 }
-.search > i {
-    font-size: 3rem;
+.search > input {
+    order: 2;
+    font-size: 1rem;
+    
 }
-.search{
+.search >i{
+    order: ;
     margin-top: 2rem;
 }
-.menu ul{
+.main-nav ul >li{
+    display: flex;
+    flex-direction: column;
+   }
+.img-article{
+    order: 3;
+}
+
+.menu ul >a>li {
     background-color: rgb(0, 255, 255);
+    flex-direction: row;
     
    
-}
+} 
 menu {
     display: flex;
 
